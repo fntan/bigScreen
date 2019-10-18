@@ -1,0 +1,407 @@
+.wrap{
+    width: 1920px;
+    margin: 0 auto;
+    background: url("../images/bg.png") no-repeat;
+    background-size: 100%;
+}
+.container{
+    padding:0 20px 23px 20px;
+}
+
+.small-title{
+    width: 85px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #fff;
+    background: url("../images/small-title-bg.png") no-repeat;
+    background-size: 100%;
+}
+
+/*头部*/
+.header{
+    height: 97px;
+    font-size: 16px;
+    color: #fff;
+    background: url("../images/header-line.png") no-repeat 0 60px;
+    background-size: 100%;
+}
+.header-l{
+    margin-top: 20px;
+}
+.header-r{
+    margin-top: 20px;
+}
+.header-c{
+    width: 610px;
+    height: 114px;
+    margin: 0 auto;
+    background: url("../images/header-text.png") no-repeat;
+    background-size: 100%;
+}
+
+
+
+/*中间部分*/
+.body-con{
+    /*margin: 0 442px 0 440px;*/
+    margin: 0 0 12px 458px;
+}
+/*众邦客户*/
+.zb-customer{
+    width: 440px;
+    height: 874px;
+    padding-left: 40px;
+    background: url("../images/zb-customer-bg.png") no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
+}
+.customer-part1{
+    margin-top: 45px;
+}
+.waveChart-box{
+    display: inline-block;
+    position: relative;
+    width: 90px;
+    margin-top: 20px;
+    margin-left: 26px;
+}
+.waveChart-box + .waveChart-box{
+    margin-left:100px;
+}
+.waveChart-bg{
+    position: absolute;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background-color:#1A3A85;
+    top:6px;
+    left: 6px;
+}
+#fillgauge1,
+#fillgauge2{
+    position: relative;
+}
+.waveChart-value{
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-top:16px;
+    z-index: 1;
+}
+.waveChart-title{
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.circleChart-box{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 23px;
+    border: 13px solid #4375A3;
+    border-radius: 50%;
+}
+.circleChart-box + .circleChart-box{
+    margin-left:94px;
+}
+.circleChart{
+    margin-top: -10px;
+    margin-left: -10px;
+}
+.circleChart .circleChart_text{
+    color: #43E2FC;
+}
+
+.customer-part2{
+    padding-top: 20px;
+}
+
+.customer-part3{
+    margin-bottom: 10px;
+}
+.echart1{
+    display:inline-block;
+    width: 190px;
+    height: 170px;
+    /*margin-top: 20px;*/
+}
+.echart1 + .echart1{
+    margin-left: -7px;
+}
+
+.echart2{
+    width: 380px;
+    height: 130px;
+    margin-top: 10px;
+}
+.customer-part2-legend{
+    position:absolute;
+    width: 200px;
+    margin-top:-80px;
+    margin-left: 200px;
+}
+.customer-part2-legend-item{
+    float: left;
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.customer-part2-legend-item:nth-of-type(odd){
+    margin-right: 32px;
+}
+.customer-part2-legend-item::before{
+    display: inline-block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: red;
+    margin-right:6px;
+}
+
+
+
+/*众邦存款*/
+.zb-deposit{
+    width: 963px;
+    height: 244px;
+    margin-bottom: 12px;
+    padding-top: 57px;
+    padding-left:52px;
+    background: url("../images/zb-deposit-bg.png") no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
+}
+.number-scroll{
+    /* height: 100%; */
+    margin-bottom: 18px;
+}
+.number-box{
+    height: 50px;
+}
+.number-item{
+    float: left;
+    width: 44px;
+    height: 50px;
+    line-height: 55px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+}
+.number-item-blue{
+    background-image: linear-gradient(#4BB0FA, #0511FF);
+}
+.number-item-green{
+    background-image: linear-gradient(#76ECFF, #007AC9);
+}
+.number-item + .number-item{
+    margin-left: 30px;
+}
+.number-item span{
+    position: absolute;
+    width: 100%;
+    line-height: 44px;
+    top: 50px;
+    left: 0;
+
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    /*transform: translateY(-50%);*/
+    letter-spacing: 10px;
+    transition: all 2.6s ease;
+}
+.number-text{
+    height: 16px;
+    margin-top: 10px;
+    padding-right:54px;
+}
+.number-text-l{
+    float: left;
+    font-size: 14px;
+    color: #fff;
+}
+.number-text-r{
+    float: right;
+    font-size: 12px;
+    color:#fff;
+}
+.number-text-item{
+    float:left;
+}
+.number-text-item + .number-text-item{
+    margin-left: 25px;
+}
+.number-text-rise{
+    font-size: 14px;
+    color: #D91EFE;
+    vertical-align: -1px;
+}
+.number-text-rise::before{
+    display: inline-block;
+    content: '';
+    width: 11px;
+    height: 11px;
+    margin-left: 3px;
+    background: url('../images/rise.png') no-repeat 0px 1px;
+}
+.number-text-fall{
+    font-size: 14px;
+    color: #44E5FF;
+    vertical-align: -1px;
+}
+.number-text-fall::before{
+    display: inline-block;
+    content: '';
+    width: 11px;
+    height: 11px;
+    margin-left: 3px;
+    background: url('../images/fall.png') no-repeat 0px 0px;
+}
+
+
+/*互联网存款*/
+.internet-deposit{
+    position: relative;
+    width: 963px;
+    height: 618px;
+    background: url("../images/internet-deposit-bg.png") no-repeat;
+    background-size: 100%;
+}
+.internet-total{
+    position: relative;
+    font-size: 14px;
+    color: #fff;
+    top: 50px;
+    left: 30px;
+}
+.internet-data{
+    display: inline-block;
+    font-size: 16px;
+    color: #fff;
+    padding: 7px 10px;
+    margin: 0 10px;
+    background-image: linear-gradient(#76ECFF, #007AC9);
+}
+.china_map{
+    width: 100%;
+    height: 100%;
+}
+.area-data-box{
+    position: absolute;
+    left: 80px;
+    bottom: 50px;
+}
+.area-data{
+    position: relative;
+    font-size: 14px;
+    padding-left: 16px;
+}
+.area-data + .area-data{
+    margin-top: 24px;
+}
+.area-data-t{
+    color: #fff;
+    margin-bottom: 7px;
+}
+.area-data-b{
+    /*color: #D91EFE;*/
+}
+.area-data-leftLine{
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    /*background-color: #D91EFE;*/
+    border-radius: 3px;
+    left: 0;
+}
+
+/*众邦产品*/
+.zb-product{
+    width: 442px;
+    height: 874px;
+    padding-left: 30px;
+    background: url("../images/zb-product-bg.png") no-repeat;
+    /*background-size: 100%;*/
+    background-size: contain;
+    box-sizing: border-box;
+}
+.product-part1{
+    padding-top: 44px;
+    padding-right: 10px;
+}
+.product-echart-pie{
+    width: 180px;
+    height: 260px;
+}
+
+.product-tab{
+    padding-left: 20px;
+    padding-bottom: 2px;
+    background: url("../images/tab-line.png") no-repeat left bottom;
+}
+.product-tab-item{
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 28px;
+    cursor:pointer
+}
+.product-tab-select{
+    background: url("../images/tab-select-bg.png") no-repeat;
+}
+.tab-container{
+    padding-top: 15px;
+}
+.tab-container-item{
+    display: none;
+}
+.tab-container-select{
+    display: block;
+}
+.product-chert-box + .product-chert-box{
+    margin-top: 12px;
+}
+.tab-container-title{
+    font-size: 12px;
+    color: #fff;
+}
+.product-echart{
+    width: 380px;
+    height: 140px;
+}
+
+
+
+/*底部*/
+.footer{
+    /*position: relative;*/
+    height: 64px;
+    background: url("../images/footer-bg.png") no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+.footer-list{
+    /*position: absolute;*/
+    /*top:23px;*/
+    /*left: 20px;*/
+    width: 99999px;
+    margin-top: 23px;
+    margin-left: 20px;
+}
+.footer-item{
+    float: left;
+    font-size: 16px;
+    color: #fff;
+}
+.footer-item + .footer-item{
+    margin-left: 100px;
+}
